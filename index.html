@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning elements</title>
+<style>
+
+body {
+  background-color: moccasin;
+}
+
+h1 {
+  color: crimson;
+  margin-left: 20px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 8px solid black;
+  box-shadow: 8px 8px 10px coral;
+}
+
+li{
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a{
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 31px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: linen;
+}
+
+li:last-child{
+  border-right: none;
+}
+
+.container {
+  display: flex;
+  height: 800px;
+  width: 1600px;
+  align-items: center;
+  background-color: grey;
+}
+
+.container > div {
+  background-color: white;
+  margin: 20px;
+  padding: 200px 200px;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  color: white;
+  text-align: center;
+  border-top: 2px solid;
+  border-color: black;
+}
+r {
+  background-color: black;
+  width: 72px;
+  height: 72px;
+  float: right;
+  border: 1px solid red;
+  margin: 2px;
+  padding: 5px;
+}
+
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#default">Home</a></li>
+  <li><a href="#News">News</a></li>
+  <li><a href="#contacts">Contact</a></li>
+  <li ><a class="active" href="#about">About</a></li>
+  <r>Image</r>
+</ul>
+
+<div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<title>Assignment Solution</title>
+
+<div class="footer">
+  <h1>Copyright 2021</h1>
+</div>
+
+</body>
+</html>
